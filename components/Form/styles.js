@@ -7,9 +7,10 @@ export const FormContainer = styled.div`
   align-items: center;
 
   margin: 0 auto;
+  padding: 5px 15px;
 
-  width: 290px;
-  height: 50vw;
+  max-width: 360px;
+  height: 60vh;
   background-color: rgba(34, 55, 148, 0.3);
   border-radius: 10px;
 `;

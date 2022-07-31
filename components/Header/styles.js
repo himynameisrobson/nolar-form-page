@@ -4,12 +4,12 @@ import { FiMail } from "react-icons/fi";
 
 export const HeaderContainer = styled.nav`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 
-  background-color: white;
-  max-width: 900px;
-  height: 8vw;
+  background-color: inherit;
+  min-width: 600px;
+  max-height: 6vh;
   margin: 0.5rem 0;
 `;
 

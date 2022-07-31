@@ -11,7 +11,7 @@ export const MainDiv = styled.div`
   background-position: center;
   background-size: cover;
 
-  height: 85vh;
+  height: 92vh;
   width: 100%;
   padding: 1.5rem;
   margin: 0;
