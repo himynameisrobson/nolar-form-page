@@ -12,8 +12,18 @@ export const MainDiv = styled.div`
 
   height: 92vh;
   width: 100%;
-  padding: 1.5rem;
-  margin: 0;
+  padding: 2rem;
+
+  @media (min-width: 375px) and (max-width: 650px) {
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+
+    background-size: cover;
+    background-position: center;
+    min-width: 600px;
+    min-height: 1300px;
+  }
 `;
 
 export const MainTextContainer = styled.div`
@@ -22,6 +32,12 @@ export const MainTextContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 50%;
+
+  @media (min-width: 375px) and (max-width: 900px) {
+    margin-top: -5rem;
+    margin-bottom: 2rem;
+    width: 80%;
+  }
 `;
 
 export const MainBigText = styled.span`
@@ -35,8 +51,13 @@ export const MainBigText = styled.span`
   color: #90e0ef;
   margin-bottom: 0.5rem;
   text-align: center;
+  width: 50%;
 
   margin: 0.5 auto;
+
+  @media (min-width: 375px) and (max-width: 900px) {
+    font-size: 2.5rem;
+  }
 `;
 
 export const MainSmallText = styled.span`
@@ -50,6 +71,11 @@ export const MainSmallText = styled.span`
   color: #90e0ef;
   margin-bottom: 0.5rem;
   text-align: center;
+  width: 50%;
 
   margin: 0.5 auto;
+
+  @media (min-width: 375px) and (max-width: 900px) {
+    font-size: 1.25rem;
+  }
 `;

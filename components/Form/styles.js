@@ -10,9 +10,14 @@ export const FormContainer = styled.div`
   padding: 5px 15px;
 
   max-width: 360px;
-  height: 60vh;
+  height: 55vh;
   background-color: rgba(34, 55, 148, 0.3);
   border-radius: 10px;
+
+  @media (min-width: 375px) and (max-width: 900px) {
+    max-width: 270px;
+    height: auto;
+  }
 `;
 
 export const FormBigText = styled.span`

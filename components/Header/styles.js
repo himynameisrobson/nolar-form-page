@@ -18,7 +18,9 @@ export const HeaderContainer = styled.nav`
     align-items: center;
 
     max-width: 200px;
-    height: auto;
+    min-height: 10vh;
+
+    margin: 0 auto;
   }
 `;
 
