@@ -10,7 +10,7 @@ const Header = () => {
     <S.HeaderContainer>
       <S.InnerContainer>
         <Link href="/">
-          <Image alt="logo" src={logo} width={75} height={75} />
+          <Image alt="logo" src={logo} width={50} height={50} />
         </Link>
       </S.InnerContainer>
       <S.ContactContainer>

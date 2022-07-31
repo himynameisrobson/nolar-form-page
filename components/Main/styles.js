@@ -4,7 +4,6 @@ export const MainDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
 
   background-image: url("assets/main.jpg");
   background-repeat: no-repeat;
@@ -26,10 +25,14 @@ export const MainTextContainer = styled.div`
 `;
 
 export const MainBigText = styled.span`
+  -webkit-text-stroke: 0.25px rgb(2, 62, 138, 0.5);
+  text-shadow: -1px 0 rgb(2, 62, 138, 0.5), 0 1px rgb(2, 62, 138, 0.5),
+    1px 0 rgb(2, 62, 138, 0.5), 0 -1px rgb(2, 62, 138, 0.5);
+
   font-weight: 700;
-  font-family: "Roboto", "sans-serif";
+  font-family: "Cabin", "sans-serif";
   font-size: 3rem;
-  color: #ee7c38;
+  color: #90e0ef;
   margin-bottom: 0.5rem;
   text-align: center;
 
@@ -37,10 +40,14 @@ export const MainBigText = styled.span`
 `;
 
 export const MainSmallText = styled.span`
+  -webkit-text-stroke: 0.25px rgb(2, 62, 138, 0.5);
+  text-shadow: -1px 0 rgb(2, 62, 138, 0.5), 0 1px rgb(2, 62, 138, 0.5),
+    1px 0 rgb(2, 62, 138, 0.5), 0 -1px rgb(2, 62, 138, 0.5);
+
   font-weight: 400;
-  font-family: "Roboto", "sans-serif";
+  font-family: "Cabin", "sans-serif";
   font-size: 1.5rem;
-  color: #ee7c38;
+  color: #90e0ef;
   margin-bottom: 0.5rem;
   text-align: center;
 
