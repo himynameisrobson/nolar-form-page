@@ -8,7 +8,7 @@ export const HeaderContainer = styled.nav`
   align-items: center;
 
   background-color: white;
-  width: 100%;
+  max-width: 900px;
   height: 8vw;
   margin: 0.5rem 0;
 `;
