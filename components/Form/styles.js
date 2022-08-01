@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import ReactInputMask from "react-input-mask";
 
-export const FormContainer = styled.div`
+export const FormContainer = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,6 +41,13 @@ export const FormSmallText = styled.span`
   margin: 0.5 auto;
 `;
 
+export const ErrorText = styled.p`
+  font-weight: 400;
+  color: red;
+  font-size: 0.7rem;
+  text-align: center;
+`;
+
 export const FormInput = styled.input`
   width: 80%;
   height: 2rem;
@@ -48,6 +56,26 @@ export const FormInput = styled.input`
   margin-bottom: 0.7rem;
   border: none;
   border-radius: 4px;
+
+  font-weight: 400;
+  font-family: "Roboto", "sans-serif";
+  font-size: 0.8rem;
+
+  padding: 0.5rem;
+`;
+
+export const CustomFormInput = styled(ReactInputMask)`
+  width: 80%;
+  height: 2rem;
+  background-color: #fff;
+  color: #000;
+  margin-bottom: 0.7rem;
+  border: none;
+  border-radius: 4px;
+
+  font-weight: 400;
+  font-family: "Roboto", "sans-serif";
+  font-size: 0.8rem;
 
   padding: 0.5rem;
 `;
