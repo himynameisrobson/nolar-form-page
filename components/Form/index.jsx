@@ -13,8 +13,8 @@ const Form = () => {
     formState: { errors },
   } = useForm({ mode: "onSubmit" });
 
-  function onSubmit(e) {
-    e.preventDefault();
+  function onSubmit() {
+    formRef.current.e?.preventDefault();
 
     emailjs
       .sendForm(
