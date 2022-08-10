@@ -14,3 +14,13 @@ export default function Home() {
     </>
   );
 }
+
+export async function getStaticProps() {
+  console.log("service id", process.env.SERVICE_ID);
+  console.log("service id", process.env.TEMPLATE_ID);
+  console.log("whtever haheahe", process.env.PUBLIC_KEY);
+
+  return {
+    props: {},
+  };
+}

@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useForm, Controller } from "react-hook-form";
+import emailjs from "@emailjs/browser";
 import * as S from "./styles";
 
 const Form = () => {
+  const formRef = useRef();
+
   const {
     register,
     handleSubmit,
@@ -10,13 +13,28 @@ const Form = () => {
     formState: { errors },
   } = useForm({ mode: "onSubmit" });
 
-  function onSubmit(data) {}
+  function onSubmit(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
+        formRef.current,
+        process.env.NEXT_PUBLIC_PUBLIC_KEY
+      )
+      .then(
+        result => {
+          alert("Email enviado com sucesso!");
+        },
+        error => {
+          alert("Não foi possível enviar o email. Confira os campos acima!");
+        }
+      );
+  }
 
   return (
-    <S.FormContainer
-      action="https://formsubmit.co/himynameisrobson@gmail.com"
-      method="POST"
-    >
+    <S.FormContainer ref={formRef} onSubmit={handleSubmit(onSubmit)}>
       <S.FormBigText>This is a text</S.FormBigText>
       <S.FormSmallText>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis
