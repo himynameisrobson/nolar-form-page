@@ -1,13 +1,12 @@
 import React from "react";
 import Form from "../Form";
-import main from "../../public/assets/main.jpg";
 
 import * as S from "./styles";
 
 const Main = () => {
   return (
     <>
-      <S.MainDiv bgImage={`url(${main})`}>
+      <S.MainDiv>
         <S.MainTextContainer>
           <S.MainBigText>This is a text to be displayed</S.MainBigText>
           <S.MainSmallText>

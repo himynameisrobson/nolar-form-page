@@ -6,12 +6,12 @@ export const FormContainer = styled.form`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 
   margin: 0 auto;
-  padding: 5px 15px;
-
+  padding: 1rem 2rem;
   max-width: 360px;
-  height: 55vh;
+  height: auto;
   background-color: rgba(34, 55, 148, 0.3);
   border-radius: 10px;
 
@@ -24,21 +24,26 @@ export const FormContainer = styled.form`
 export const FormBigText = styled.span`
   font-weight: 700;
   font-family: "Roboto", "sans-serif";
-  font-size: 2.5rem;
-  color: rgb(255, 85, 0, 0.5);
+  font-size: 3rem;
+  color: #edf6f9;
 
-  margin: 1rem 0;
+  margin: 1rem auto;
+  @media (min-width: 375px) and (max-width: 1100px) {
+    font-size: 2.5rem;
+  }
 `;
 
 export const FormSmallText = styled.span`
   font-weight: 400;
   font-family: "Roboto", "sans-serif";
   font-size: 1rem;
-  color: #fff;
-  margin-bottom: 0.5rem;
+  color: #edf6f9;
   text-align: center;
 
-  margin: 0.5 auto;
+  margin: 0.5rem auto;
+  @media (min-width: 375px) and (max-width: 1100px) {
+    font-size: 0.75rem;
+  }
 `;
 
 export const ErrorText = styled.p`
@@ -51,7 +56,7 @@ export const ErrorText = styled.p`
 export const FormInput = styled.input`
   width: 80%;
   height: 2rem;
-  background-color: #fff;
+  background-color: #edf6f9;
   color: #000;
   margin-bottom: 0.7rem;
   border: none;
@@ -67,7 +72,7 @@ export const FormInput = styled.input`
 export const CustomFormInput = styled(ReactInputMask)`
   width: 80%;
   height: 2rem;
-  background-color: #fff;
+  background-color: #edf6f9;
   color: #000;
   margin-bottom: 0.7rem;
   border: none;
@@ -90,7 +95,7 @@ export const FormButton = styled.button`
 
   cursor: pointer;
   background-color: rgb(255, 85, 0, 0.8);
-  color: #fff;
+  color: #edf6f9;
   border-radius: 2px;
   border: none;
   outline: none;
