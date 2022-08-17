@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link";
+// import Link from "next/link";
 import * as S from "./styles";
 
 const Footer = () => {
@@ -7,21 +7,17 @@ const Footer = () => {
     <S.Footer>
       <S.Text>Nolar.net - 2022</S.Text>
       <S.InnerDiv>
-        <Link href="/">
-          <a>
-            <S.Whatsapp />
-          </a>
-        </Link>
-        <Link href="/">
-          <a>
-            <S.Instagram />
-          </a>
-        </Link>
-        <Link href="/">
-          <a>
-            <S.Facebook />
-          </a>
-        </Link>
+        <a href="https://wa.me/message/2SMP3QHFMCJZK1" target="_blank">
+          <S.Whatsapp />
+        </a>
+
+        <a href="https://www.instagram.com/nolar.net_/" target="_blank">
+          <S.Instagram />
+        </a>
+
+        <a href="https://www.facebook.com/nolar.net" target="_blank">
+          <S.Facebook />
+        </a>
       </S.InnerDiv>
     </S.Footer>
   );

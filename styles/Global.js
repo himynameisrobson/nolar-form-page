@@ -10,8 +10,8 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 body {
-  background-image: #fff;
-  /* background-image: url("assets/main.jpg"); */
+  /* background-image: #fff; */
+  background-image: url("assets/main.jpg");
   background-repeat: no-repeat;
   background-position: center; 
   background-size: cover;

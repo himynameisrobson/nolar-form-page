@@ -2,14 +2,13 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.nav`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
-  background-color: transparent;
-  min-width: 600px;
-  height: auto;
-  margin: 1rem 0;
-  padding: 1rem 1rem;
+  background-color: #edf6f9;
+  width: 100%;
+  height: 12vh;
+  padding: 1rem;
 
   @media (min-width: 375px) and (max-width: 650px) {
     display: flex;

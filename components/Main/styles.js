@@ -38,8 +38,8 @@ export const MainBigText = styled.span`
   font-weight: 700;
   font-family: "Cabin", "sans-serif";
   font-size: 3rem;
-  /* color: #edf6f9; */
-  color: #000;
+  color: #edf6f9;
+  /* color: #000; */
   margin-bottom: 0.5rem;
   width: 50%;
 
@@ -54,8 +54,8 @@ export const MainSmallText = styled.span`
   font-weight: 400;
   font-family: "Cabin", "sans-serif";
   font-size: 1rem;
-  /* color: #edf6f9; */
-  color: #000;
+  color: #edf6f9;
+  /* color: #000; */
   margin-bottom: 0.5rem;
   width: 50%;
 

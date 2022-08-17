@@ -18,8 +18,7 @@ export const Footer = styled.footer`
 export const Text = styled.span`
   font-family: "Roboto", "sans-serif";
   font-weight: 700;
-  /* color: #edf6f9; */
-  color: #ccc;
+  color: #edf6f9;
 `;
 
 export const InnerDiv = styled.div`
@@ -31,23 +30,22 @@ export const InnerDiv = styled.div`
 export const Whatsapp = styled(BsWhatsapp)`
   height: 20px;
   width: 20px;
-  /* color: #edf6f9; */
-  color: #ccc;
+  color: #22333b;
+
   margin: 2px;
 `;
 
 export const Instagram = styled(SiInstagram)`
   height: 20px;
   width: 20px;
-  /* color: #edf6f9; */
-  color: #ccc;
+  color: #22333b;
+
   margin: 2px;
 `;
 
 export const Facebook = styled(FaFacebook)`
   height: 20px;
   width: 20px;
-  /* color: #edf6f9; */
-  color: #ccc;
+  color: #22333b;
   margin: 2px;
 `;
