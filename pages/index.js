@@ -13,11 +13,11 @@ export default function Home() {
         <meta name="keywords" content="nolar.net" />
         <style>
           @import
-          url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+          url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
         </style>
         <style>
           @import
-          url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+          url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
         </style>
       </Head>
       <GlobalStyle />

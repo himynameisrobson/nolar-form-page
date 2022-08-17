@@ -24,11 +24,11 @@ export const FormContainer = styled.form`
 export const FormBigText = styled.span`
   font-weight: 700;
   font-family: "Roboto", "sans-serif";
-  font-size: 3rem;
+  font-size: 2rem;
   color: #edf6f9;
 
   margin: 1rem auto;
-  @media (min-width: 375px) and (max-width: 1100px) {
+  @media (min-width: 375px) and (max-width: 900px) {
     font-size: 2.5rem;
   }
 `;
@@ -38,10 +38,10 @@ export const FormSmallText = styled.span`
   font-family: "Roboto", "sans-serif";
   font-size: 1rem;
   color: #edf6f9;
-  text-align: center;
+  text-align: left;
 
   margin: 0.5rem auto;
-  @media (min-width: 375px) and (max-width: 1100px) {
+  @media (min-width: 375px) and (max-width: 900px) {
     font-size: 0.75rem;
   }
 `;

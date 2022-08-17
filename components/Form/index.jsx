@@ -35,11 +35,10 @@ const Form = () => {
 
   return (
     <S.FormContainer ref={formRef} onSubmit={handleSubmit(onSubmit)}>
-      <S.FormBigText>This is a text</S.FormBigText>
+      <S.FormBigText>Empreenda com sucesso!</S.FormBigText>
       <S.FormSmallText>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis
-        nibh nisl. Maecenas sit amet sapien condimentum, varius arcu vitae,
-        scelerisque risus. Pellentesque eu dapibus.
+        Preencha o formulário e em breve um de nossos especialistas entrará em
+        contato.
       </S.FormSmallText>
       <S.FormInput
         placeholder="Digite seu nome"
@@ -68,7 +67,7 @@ const Form = () => {
       {errors.phone && (
         <S.ErrorText>Insira um número válido de celular</S.ErrorText>
       )}
-      <S.FormButton type="submit">Clique aqui</S.FormButton>
+      <S.FormButton type="submit">Enviar!</S.FormButton>
     </S.FormContainer>
   );
 };

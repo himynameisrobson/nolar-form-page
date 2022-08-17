@@ -10,19 +10,14 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 body {
-  /* background-image: #fff; */
   background-image: url("assets/main.jpg");
   background-repeat: no-repeat;
   background-position: center; 
   background-size: cover;
+  min-width: 650px;
 
   @media (min-width: 375px) and (max-width: 650px) {
-
-
-    background-size: cover;
-    background-position: center;
-   
-
+  background-image: #3a473f;
   }
 }
 `;
